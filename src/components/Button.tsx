@@ -11,18 +11,18 @@ export type Props = {
 const Button = ({ text, variant, size, onClick, disabled }: Props) => {
     let classes = '';
     if (variant === 'primary') {
-        classes = 'justify-center items-center flex p-2 p-4 bg-gray-800 rounded text-white font-normal hover:bg-gray-700 focus:shadow-outline';
+        classes = ' bg-gray-800 rounded text-white font-normal hover:bg-gray-700 focus:shadow-outline';
     } else if (variant === 'secondary') {
-        classes = 'justify-center items-center flex p-2 p-4 bg-gray-100 rounded text-gray-800 font-normal border-gray-800 border-2 hover:bg-gray-200  focus:shadow-outline';
+        classes = ' flex bg-gray-100 rounded text-gray-800 font-normal border-gray-800 border-2 hover:bg-gray-200  focus:shadow-outline';
     } else if (variant === 'tertiary') {
-        classes = 'p-2 p-4 rounded text-black font-normal hover:bg-gray-200 focus:shadow-outline';
+        classes = 'rounded text-black font-normal hover:bg-gray-200 focus:shadow-outline';
     }
     if (size === 'sm') {
-        classes += ' py-1 px-2';
+        classes += ' py-2 px-3 text-xs';
     } else if (size === 'md') {
-        classes += ' py-2 px-3';
+        classes += ' py-2 px-3 text-md';
     } else if (size === 'lg') {
-        classes += ' py-3 px-4';
+        classes += ' py-2 px-3 text-lg';
     
     }
 
