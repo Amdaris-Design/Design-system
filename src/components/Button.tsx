@@ -18,11 +18,11 @@ const Button = ({ text, variant, size, onClick, disabled }: Props) => {
         classes = 'rounded text-black font-normal hover:bg-gray-200 focus:shadow-outline';
     }
     if (size === 'sm') {
-        classes += ' py-2 px-3 text-xs';
+        classes += ' py-2 px-4 text-xs';
     } else if (size === 'md') {
-        classes += ' py-2 px-3 text-md';
+        classes += ' py-2 px-4 text-md';
     } else if (size === 'lg') {
-        classes += ' py-2 px-3 text-lg';
+        classes += ' py-2 px-4 text-lg';
     
     }
 
