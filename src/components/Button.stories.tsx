@@ -3,8 +3,13 @@ import { Story, Meta } from '@storybook/react';
 import Button, { Props } from './Button';
 
 export default {
-    title: 'Design System/Button',
+    title: 'Example/Button',
     component: Button,
+    argTypes: {
+        onClick: {
+            action: 'clicked'
+        }
+    },
 } as Meta;
 
 const Template: Story<Props> = (args) => <Button {...args} />;
@@ -14,6 +19,7 @@ Primary.args = {
     variant: 'primary',
     size: 'md',
     disabled: false,
+    showIcon: true,
 };
 
 
